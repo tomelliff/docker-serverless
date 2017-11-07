@@ -15,6 +15,15 @@ docker pull tomelliff/serverless
 ```sh
 docker run -it tomelliff/serverless /bin/sh
 ```
+or
+```sh
+docker run -it tomelliff/serverless serverless info
+```
+
+#### Installing npm dependencies in local Docker container
+```sh
+docker run -it tomelliff/serverless /bin/sh -c "npm install && serverless deploy"
+```
 
 #### Using it in Gitlab CI
 ```yaml

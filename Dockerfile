@@ -2,4 +2,5 @@ FROM node:alpine
 
 LABEL maintainer "tomelliff@gmail.com"
 
-RUN npm install -g serverless@1.13.1
+RUN apk add --no-cache git && \
+    npm install -g serverless@1.24.0
